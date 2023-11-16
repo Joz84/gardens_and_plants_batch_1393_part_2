@@ -1,0 +1,9 @@
+<div class="container">
+    <h1 class="text-center">Add a new tag</h1>
+
+    <%= simple_form_for [@plant, @plant_tag] do |f| %>
+        <%= f.association :tag, collection: Tag.all %>
+        <%= f.button :submit %>
+    <% end %>
+
+</div>
